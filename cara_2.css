@@ -183,3 +183,18 @@ body, html {
 .caja-derecha-animada.visible-lateral {
     transform: translateX(0);
 }
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem !important; 
+        text-align: center;
+    }
+    
+    body {
+        padding: 10px; 
+    }
+
+    .seccion, header, footer {
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+}
