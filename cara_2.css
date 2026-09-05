@@ -1,0 +1,185 @@
+.menu-inferior-referencia {
+    background-color: #ffffff;
+    border-top: 1px solid #e4e4e7;
+    border-bottom: 1px solid #e4e4e7;
+    padding: 2rem 0;
+    width: 100%;
+}
+.container-menu-inf {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.nav-item-inf {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #71717a; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding-bottom: 8px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+.nav-item-inf i {
+    font-size: 1.3rem;
+}
+.nav-item-inf:hover {
+    color: #18181b;
+}
+.nav-item-inf.activo {
+    color: #000000;
+}
+.nav-item-inf.activo::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+}
+.seccion-galeria-clara {
+    background-color: #ffffff;
+    padding: 5rem 0;
+    color: #1a1a1a;
+    width: 100%;
+}
+.seccion-galeria-clara .galeria-titulo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 1rem;
+    justify-content: center;
+}
+.seccion-galeria-clara .titulo-galeria-principal {
+    font-size: 2.8rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: #1a1a1a;
+    margin: 0;
+    text-transform: uppercase;
+}
+.seccion-galeria-clara .galeria-subtitulo {
+    text-align: center;
+    color: #555555;
+    font-size: 1.1rem;
+    margin-bottom: 3.5rem;
+}
+.seccion-galeria-clara .grid-galeria-portones {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.seccion-galeria-clara .item-galeria {
+    overflow: hidden;
+    border-radius: 6px;
+    background: #ffffff;
+    border: 1px solid #e4e4e7;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    height: 320px;
+    transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+}
+.seccion-galeria-clara .item-galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.seccion-galeria-clara .item-galeria:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent-color);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+.seccion-galeria-clara .item-galeria:hover img {
+    transform: scale(1.05);
+}
+.seccion-galeria-clara .item-galeria {
+    overflow: hidden;
+    border-radius: 6px;
+    background: #f4f4f5; 
+    border: 1px solid #e4e4e7;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccion-galeria-clara .item-galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    transition: transform 0.5s ease;
+}
+.seccion-galeria-clara .item-galeria:hover img {
+    transform: scale(1.03); 
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(580px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.hero h1, .hero h2, .hero p, .hero .btn-video {
+    animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.hero h1 {
+    animation-delay: 2s;
+    opacity: 0; 
+}
+
+.hero p {
+    animation-delay: 2s;
+    opacity: 0;
+}
+
+.hero .botones-contacto-wrapper, 
+.hero .btn-video {
+    animation-delay: 2s;
+    opacity: 0;
+}
+section .container > * {
+    animation: fadeInUp 0.9s ease-out forwards;
+}
+body, html {
+    overflow-x: hidden;
+}
+.caja-izquierda-animada {
+    transform: translateX(-120vw); 
+    transition: transform 4s cubic-bezier(1, 4, 2, 4);
+    will-change: transform;
+}
+.caja-derecha-animada {
+    transform: translateX(120vw); 
+    transition: transform 4s cubic-bezier(1, 4, 2, 4);
+    will-change: transform;
+}
+.caja-izquierda-animada.visible-lateral,
+.caja-derecha-animada.visible-lateral {
+    transform: translateX(0);
+}
