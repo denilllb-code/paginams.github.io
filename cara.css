@@ -148,7 +148,6 @@ body {
     margin-bottom: 1rem;
     color: var(--primary-color);
 }
-/* Grid Productos */
 .grid-productos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -213,7 +212,6 @@ body {
     align-items: center;
     gap: 8px;
 }
-/* Footer */
 .footer {
     background: var(--primary-color);
     color: var(--white);
@@ -221,12 +219,10 @@ body {
     padding: 1.5rem 0;
     font-size: 0.9rem;
 }
-/* EFECTOS */
 ::selection {
     background-color: var(--accent-color);
     color: var(--white);
 }
-/*ANIMACIONES DE MOVIMIENTO PARA LOS TEXTOS*/
 @keyframes slideInUp {
     from {
         opacity: 0;
@@ -266,7 +262,6 @@ body {
     color: var(--accent-color);
     transform: scale(1.05);
 }
-/*ANIMACIÓN SUTIL DE MOVIMIENTO PARA TEXTO ESTÁTICO*/
 @keyframes flotarTexto {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-3px); }
@@ -278,8 +273,6 @@ p, h1, h2, h3, .logo {
 h1 { animation-delay: 0s; }
 .hero-content p { animation-delay: 0.5s; }
 .section-title { animation-delay: 1s; }
-/*FONDOS CON IMAGEN Y CAPA OSCURA PARA CADA SECCIÓN*/
-/* CORRECCIÓN DE ANCHO COMPLETO EN SECCIÓN */
 .section-full {
     width: 100%;
     padding: 4rem 0;
@@ -524,7 +517,6 @@ h1 { animation-delay: 0s; }
     }
 }
 
-/* Adaptabilidad para celulares*/
 @media (max-width: 900px) {
     .contenedor-mision-pasion {
         flex-direction: column;
