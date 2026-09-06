@@ -391,7 +391,7 @@ h1 { animation-delay: 0s; }
     font-weight: 350; 
     color: var(--white);
     text-align: center;
-    line-height: 2;
+    line-height: 2.5;
     letter-spacing: -0.5px;
     margin-bottom: 1.5rem;
     text-transform: none;
