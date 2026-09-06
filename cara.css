@@ -568,3 +568,12 @@ h1 { animation-delay: 0s; }
     color: #d1d5db;
     margin: 0;
 }
+.subtitulo-seccion-productos {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #d97706; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem; 
+}
