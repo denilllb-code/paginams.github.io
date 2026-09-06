@@ -129,7 +129,7 @@ body {
     font-size: 1.1rem;
     line-height: 1.7;
     color: #e4e4e7;
-    margin-top: -1.5rem;
+    margin-top: -1rem;
     margin-bottom: 2rem;
 }
 .grid-servicios {
@@ -391,7 +391,7 @@ h1 { animation-delay: 0s; }
     font-weight: 350; 
     color: var(--white);
     text-align: center;
-    line-height: 3;
+    line-height: 2;
     letter-spacing: -0.5px;
     margin-bottom: 1.5rem;
     text-transform: none;
