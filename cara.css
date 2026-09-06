@@ -290,7 +290,7 @@ h1 { animation-delay: 0s; }
     color: var(--accent-color);
 }
 #productos {
-    background: linear-gradient(rgba(244, 244, 245, 0.92), rgba(244, 244, 245, 0.92)), url('IMG/fot.jpeg') center/cover no-repeat;
+    background: linear-gradient(rgba(200, 200, 205, 0.92), rgba(200, 200, 205, 0.92)), url('IMG/fot.jpeg') center/cover no-repeat;
 }
 #contacto {
     background: linear-gradient(rgba(30, 30, 30, 0.9), rgba(30, 30, 30, 0.9)), url('IMG/banner4.jpeg') center/cover fixed no-repeat;
