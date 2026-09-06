@@ -272,7 +272,8 @@ p, h1, h2, h3, .logo {
 }
 h1 { animation-delay: 0s; }
 .hero-content p { animation-delay: 0.5s; }
-.section-title { animation-delay: 1s; }
+.section-title { 
+    animation-delay: 1s; }
 .section-full {
     width: 100%;
     padding: 4rem 0;
@@ -390,7 +391,7 @@ h1 { animation-delay: 0s; }
     font-weight: 350; 
     color: var(--white);
     text-align: center;
-    line-height: 1.3;
+    line-height: 2;
     letter-spacing: -0.5px;
     margin-bottom: 1.5rem;
     text-transform: none;
